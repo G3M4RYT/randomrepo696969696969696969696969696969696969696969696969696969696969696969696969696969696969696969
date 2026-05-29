@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>490LL0_YT's FAROVITE GAMES' LIST</title>
+    <style>
+        body {
+            font-family: 'Agency FB', sans-serif;
+            margin: 40px;
+            background-color: #1f1f1f;
+        }
+        h1 {
+            color: #aeaeae;
+            font-style: italic;
+        }
+        .gamecard {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            font-family: 'Nexa';
+        }
+    </style>
+</head>
+<body>
+
+<h1>490LL0_YT's FAROVITE GAMES' LIST</h1>
+<div id="gameslist"></div>
+
+<script>
+        fetch("games.json")
+        .then(response => response.json())
+        .then(data => {
+            const gameslist = document.getElementById("gameslist");
+            data.game.forEach(game => {
+                gameslist.innerHTML += `
+                <div class="gamecard">
+                    <h2>${game.name}</h2>
+                    <p><strong>${game.year}</strong></p>
+                    <p><strong>Copies sold:</strong> ${game.copies_sold}</p>
+                    <p><strong>Genre:</strong> ${game.genre}</p>
+                </div>
+                `;
+            })
+        })
+        .catch(error => {
+            console.log("ERROR:", error);
+        });
+</script>
+
+</body>
+</html>

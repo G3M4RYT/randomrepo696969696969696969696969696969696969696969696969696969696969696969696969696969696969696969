@@ -1,0 +1,46 @@
+{
+    "game": [
+{    
+    "name": "NFS: Most Wanted",
+    "year": "2005",
+    "copies_sold": "16.1M",
+    "genre": "Racing / Arcade"
+},
+{
+    "name": "Forza Horizon 6",
+    "year": "2026",
+    "copies_sold": "500k+",
+    "genre": "Racing / Simcade"
+},
+{
+    "name": "Minecraft",
+    "year": "2009",
+    "copies_sold": "350M+",
+    "genre": "Sandbox / Survival"
+},
+{
+    "name": "Roblox",
+    "year": "2006",
+    "copies_sold": "0",
+    "genre": "Social / Platform"
+},
+{
+    "name": "Just Shapes & Beats",
+    "year": "2018",
+    "copies_sold": "750k+",
+    "genre": "Rhythm / Music"
+},
+{
+    "name": "1NSANE",
+    "year": "2000",
+    "copies_sold": "250k+",
+    "genre": "Racing / Simcade"
+},
+{
+    "name": "Re-Volt",
+    "year": "1999",
+    "copies_sold": "<100k",
+    "genre": "Racing / Arcade"
+}
+]
+}
